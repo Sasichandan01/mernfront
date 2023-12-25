@@ -20,13 +20,16 @@ function Contact() {
     e.preventDefault();
     
     try {
-      const response = await fetch(`http://localhost:5000/api/auth/contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(contact),
-      });
+      const response = await fetch(
+        `https://portfolioback-4hta.onrender.com/api/auth/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(contact),
+        }
+      );
       setTimeout(() => setVal("sent"), 1000);
       setTimeout(() => setVal(""), 3000);
       
