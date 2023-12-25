@@ -1,4 +1,3 @@
-
 import "./navbar.css";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -15,7 +14,6 @@ export default function Navbar(params) {
     <div>
       <div>
         <div className="nav">
-          
           <p>
             <a href="#about">
               <i
@@ -24,8 +22,7 @@ export default function Navbar(params) {
               ></i>
               About
             </a>
-          </p>
-         {" "}
+          </p>{" "}
           <p>
             <a href="#skillss">
               <i
@@ -37,7 +34,6 @@ export default function Navbar(params) {
           </p>
           <p>
             <a href="#projectss">
-             
               <i
                 className="fa-solid fa-gear"
                 style={{ color: "#f6f7f9", paddingRight: "2px" }}

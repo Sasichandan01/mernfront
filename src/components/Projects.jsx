@@ -8,13 +8,13 @@ import "aos/dist/aos.css";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1200 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1200, min: 1100 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 900, min: 0 },
@@ -56,7 +56,7 @@ export default function Projects() {
               >
                 <div>
                   <div className="card">
-                    <img src="https://i.imgur.com/PVCMM71.png" alt="" />
+                    <img src="https://i.imgur.com/onn9k3y.png" alt="" />
                     <div className="card-content">
                       <h2>Portfolio</h2>
                       <p>
@@ -70,18 +70,10 @@ export default function Projects() {
                         <b>Tech Used:</b> MERN Stack
                       </p>
 
-                      <a
-                        target="_blank"
-                        className="a"
-                        href="https://github.com/Sasichandan01/mernfront"
-                      >
+                      <a target="_blank" className="a" href="#">
                         View Code
                       </a>
-                      <a
-                        target="_blank"
-                        className="b"
-                        href="https://portfoliofront-zqui.onrender.com/"
-                      >
+                      <a target="_blank" className="b" href="#">
                         View project
                       </a>
                     </div>

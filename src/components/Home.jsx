@@ -29,10 +29,10 @@ export default function Home() {
                       <div>Sasi Chandan</div>
                     </div>
                     <div className="second">
-                      <div>Web Developer</div>
+                      <div>Programmer</div>
                     </div>
                     <div className="third">
-                      <div>Programmer</div>
+                      <div>Web Developer</div>
                     </div>
                   </div>
                 </main>
@@ -43,13 +43,13 @@ export default function Home() {
                 <h1 style={{ "--i": "2" }}>Y</h1>
                 <h1 style={{ "--i": "3" }}>P</h1>
                 <h1 style={{ "--i": "4" }}>o</h1>
-                <h1 style={{ "--i": "5"}}>r</h1>
+                <h1 style={{ "--i": "5" }}>r</h1>
                 <h1 style={{ "--i": "6" }}>t</h1>
                 <h1 style={{ "--i": "7" }}>f</h1>
                 <h1 style={{ "--i": "8" }}>o</h1>
                 <h1 style={{ "--i": "9" }}>l</h1>
-                <h1 style={{ "--i": "10"}}>i</h1>
-                <h1 style={{ "--i": "10"}}>o</h1>
+                <h1 style={{ "--i": "10" }}>i</h1>
+                <h1 style={{ "--i": "10" }}>o</h1>
               </div>
             </div>
           </div>

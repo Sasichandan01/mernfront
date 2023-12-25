@@ -43,11 +43,16 @@ export default function About() {
               field of web development.
             </p>
             <button>
-              Download CV &nbsp;
-              <i
-                className="fa-solid fa-file-arrow-down"
-                styles={{ color: "red" }}
-              ></i>
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1kBfSuIVj4xh7WhSas9hXoGNUKNnX3wlc/view?usp=sharing"
+              >
+                Download CV &nbsp;
+                <i
+                  className="fa-solid fa-file-arrow-down"
+                  styles={{ color: "red" }}
+                ></i>
+              </a>
             </button>
           </div>
         </div>

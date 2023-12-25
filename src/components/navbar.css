@@ -22,42 +22,57 @@ a {
   color: white;
   border-color: white;
 }
-@media (max-height: 400px) {
-  .nav {
-    transform: translate(-50%, 50%);
-   
-    background: none;
-  }
-}
 
-@media (max-height: 800px) {
-  .nav {
-    transform: translate(-50%, 100%);
-    bottom:20%;
-  }
-}
 @media (max-height: 1438px) {
   .nav {
     transform: translate(-50%, 100%);
     bottom:10%;
   }
 }
+@media (max-height: 800px) {
+  .nav {
+    transform: translate(-50%, 100%);
+    bottom:12%;
+  }
+}
+@media (max-height: 470px) {
+  .nav {
+    transform: translate(-50%, 100%);
+    bottom:20%;
+  }
+}
+@media (max-height: 300px) {
+  .nav {
+    transform: translate(-50%, 100%);
+    bottom:30%;
+  }
+}
 @media (max-width:150px){
   .nav{
-    bottom:10%;
+    
     height:fit-content
   }
 }
-@media (max-width:400px){
+@media (max-width:500px){
   .nav{
-    width:100%;
+    width:70%;
+    height:50px;
   }
+  .nav p {
+  margin: auto;
+  width:20px;
+  height:25px;
+  overflow: hidden;
+  transition: width 0.7s ;
+}
+.nav p:hover{
+  width: 100%;
+}
+
 }
 .nav p {
   margin: auto;
-  /* width:20px;
-  height:25px;
-  overflow: hidden; */
+
 }
 .nav p:hover{
   width: fit-content;

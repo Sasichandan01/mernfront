@@ -1,5 +1,7 @@
 import "./Contact.css";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Contact() {
   const [contact, setcontact] = useState({
     username: "",
@@ -7,7 +9,7 @@ function Contact() {
     subject: "",
     message: "",
   });
-  const [val,setVal]=useState("");
+  const [res, setres] = useState(0);
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -18,7 +20,7 @@ function Contact() {
   };
   const hanlesubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       const response = await fetch(
         `https://portfolioback-4hta.onrender.com/api/auth/contact`,
@@ -30,13 +32,16 @@ function Contact() {
           body: JSON.stringify(contact),
         }
       );
-      setTimeout(() => setVal("sent"), 1000);
-      setTimeout(() => setVal(""), 3000);
-      
-    } catch (err) {
-     
-    }
+
+      setres(response.ok);
+    } catch (err) {}
   };
+  if (res) {
+    toast.success("Submitted Successfully", {
+      theme: "colored",
+      draggable: "true",
+    });
+  }
 
   return (
     <section
@@ -178,7 +183,7 @@ function Contact() {
                   ></textarea>
                   <div className="but">
                     <button type="submit" className="but-button">
-                      &nbsp;&nbsp;<b>{val}</b>&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;
                       <i className="fa-brands fa-telegram fa-2x"></i>
                       &nbsp;&nbsp;
                     </button>

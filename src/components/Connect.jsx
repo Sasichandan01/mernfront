@@ -23,7 +23,7 @@ export default function Connect() {
       >
         <div>
           <a target="_blank" href="https://www.instagram.com/bhargav._.2266/">
-            <p>
+            <p id="insta">
               <i className="fa-brands fa-instagram"></i>
               <span>&nbsp;Instagram&nbsp;</span>
             </p>
@@ -34,7 +34,7 @@ export default function Connect() {
             target="_blank"
             href="https://www.linkedin.com/in/bhargav-sasi-chandan-67575a249/"
           >
-            <p>
+            <p id="linked">
               <i className="fa-brands fa-linkedin"></i>
               <span>&nbsp;Linkedin&nbsp;</span>
             </p>
@@ -42,7 +42,7 @@ export default function Connect() {
         </div>
         <div>
           <a target="_blank" href="https://github.com/Sasichandan01">
-            <p>
+            <p id="github">
               {" "}
               <i className="fa-brands fa-github"></i>
               <span>&nbsp;Github&nbsp;</span>

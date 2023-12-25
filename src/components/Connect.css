@@ -25,15 +25,21 @@
   width:30px;
   overflow: hidden;
   height: 30px;;
-  background-color: cadetblue
+  background-color: cadetblue;
+  transition: width 0.5s ease-in-out;
 }
 .connect div a {
   margin-bottom: 2px;;
   overflow: hidden;
 }
-.connect div a p:hover{
-   width: fit-content;
-   
+#insta:hover{
+   width: 100px;
+}
+#linked:hover{
+  width:93px;
+}
+#github:hover{
+  width:85px;
 }
 .connect div a p i{
   border-radius: 10px;
