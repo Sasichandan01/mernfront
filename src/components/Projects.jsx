@@ -70,10 +70,18 @@ export default function Projects() {
                         <b>Tech Used:</b> MERN Stack
                       </p>
 
-                      <a target="_blank" className="a" href="#">
+                      <a
+                        target="_blank"
+                        className="a"
+                        href="https://github.com/Sasichandan01/mernfront"
+                      >
                         View Code
                       </a>
-                      <a target="_blank" className="b" href="#">
+                      <a
+                        target="_blank"
+                        className="b"
+                        href="https://portfoliofront-zqui.onrender.com/"
+                      >
                         View project
                       </a>
                     </div>
