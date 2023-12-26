@@ -32,17 +32,16 @@ function Contact() {
           body: JSON.stringify(contact),
         }
       );
-
-      setres(response.ok); 
-      if (res) {
-        toast.success("Submitted Successfully", {
-          theme: "colored",
-          draggable: "true",
-        });
-      }
+      console.log(response);
+      setres(response.ok);
     } catch (err) {}
   };
- 
+  if (res) {
+    toast.success("Submitted Successfully", {
+      theme: "colored",
+      draggable: "true",
+    });
+  }
 
   return (
     <section
