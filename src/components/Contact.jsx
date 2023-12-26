@@ -33,15 +33,16 @@ function Contact() {
         }
       );
 
-      setres(response.ok);
+      setres(response.ok); 
+      if (res) {
+        toast.success("Submitted Successfully", {
+          theme: "colored",
+          draggable: "true",
+        });
+      }
     } catch (err) {}
   };
-  if (res) {
-    toast.success("Submitted Successfully", {
-      theme: "colored",
-      draggable: "true",
-    });
-  }
+ 
 
   return (
     <section
