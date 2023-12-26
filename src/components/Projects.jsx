@@ -50,8 +50,8 @@ export default function Projects() {
                 ssr={true} // means to render carousel on server-side.
                 autoPlay={true}
                 infinite={true}
-                autoPlaySpeed={2000}
-                transitionDuration={2000}
+                autoPlaySpeed={3000}
+                transitionDuration={0}
                 pauseOnHover={true}
               >
                 <div>
