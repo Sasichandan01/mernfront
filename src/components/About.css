@@ -25,7 +25,7 @@
   border: none;
   border-radius: 25px;
   padding: 5px;
-  
+  padding-left: 5%;
 }
 .about-details button a{
   color: black !important;
