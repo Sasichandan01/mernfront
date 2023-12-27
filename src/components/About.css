@@ -8,8 +8,8 @@
   font-weight: bolder;
   text-transform: uppercase;
 }
-.about-details p {
-  padding-top: 5%;
+.about-details p,h1 {
+  padding: 5%;
 }
 .about-details {
   border-radius: 25px;

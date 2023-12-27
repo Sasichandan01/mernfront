@@ -60,7 +60,7 @@
 }
 
 .card a  {
-  color:black !important;
+  color:white !important;
 
   border:1px solid black;
   border-radius: 10px;
@@ -69,7 +69,7 @@
   text-decoration: none;
 }
 .card a:hover{
-  background-color: chartreuse;
+  background-color:#3503ad;
 }
 .a{
   inset: auto auto 40px 30px;

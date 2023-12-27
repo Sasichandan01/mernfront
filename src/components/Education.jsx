@@ -28,20 +28,21 @@ export default function Education() {
               <div
                 className=" col-lg-4 col-12 "
                 id="edu-details"
-                data-aos="fade-right"
+                data-aos="fade-left"
                 data-aos-offset="200"
                 data-aos-easing="linear"
               >
                 <span>
-                  <i className="fa-solid fa-user-graduate fa-3x"></i>
+                  <i className="fa-solid fa-school fa-3x"></i>
                 </span>
-                <span className="badge">2021-2025</span>
-                <p>National Institute of Technology,Raipur</p>
-                <p>B.Tech (CSE)</p>
+                <span className="badge">2014-2019</span>
+                <p>Tiny Tots High School</p>
+                <p>VI-X </p>
                 <p style={{ fontWeight: "bolder", textTransform: "uppercase" }}>
-                  CGPA: 8.18 (till 4th semester)
+                  CGPA : 10
                 </p>
               </div>
+
               <div
                 className=" col-lg-4 col-12 "
                 id="edu-details"
@@ -62,18 +63,18 @@ export default function Education() {
               <div
                 className=" col-lg-4 col-12 "
                 id="edu-details"
-                data-aos="fade-left"
+                data-aos="fade-right"
                 data-aos-offset="200"
                 data-aos-easing="linear"
               >
                 <span>
-                  <i className="fa-solid fa-school fa-3x"></i>
+                  <i className="fa-solid fa-user-graduate fa-3x"></i>
                 </span>
-                <span className="badge">2014-2019</span>
-                <p>Tiny Tots High School</p>
-                <p>VI-X </p>
+                <span className="badge">2021-2025</span>
+                <p>National Institute of Technology,Raipur</p>
+                <p>B.Tech (CSE)</p>
                 <p style={{ fontWeight: "bolder", textTransform: "uppercase" }}>
-                  CGPA : 10
+                  CGPA: 8.18 (till 4th semester)
                 </p>
               </div>
             </div>
