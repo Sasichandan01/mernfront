@@ -69,7 +69,12 @@
   text-decoration: none;
 }
 .card a:hover{
-  background-color:#3503ad;
+  background: rgb(1, 5, 25);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 5, 25, 1) 28%,
+    rgba(101, 4, 112, 1) 75%
+  );
 }
 .a{
   inset: auto auto 40px 30px;
