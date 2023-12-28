@@ -9,7 +9,7 @@ function Contact() {
     subject: "",
     message: "",
   });
-  const [res, setres] = useState(0);
+  const [res, setres] = useState("");
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -22,26 +22,17 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        `https://portfolioback-4hta.onrender.com/api/auth/contact`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(contact),
-        }
-      );
-      console.log(response);
-      setres(response.ok);
+      const response = await fetch(`http://localhost:5000/api/auth/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contact),
+      });
+
+      setres("sent");
     } catch (err) {}
   };
-  if (res) {
-    toast.success("Submitted Successfully", {
-      theme: "colored",
-      draggable: "true",
-    });
-  }
 
   return (
     <section
@@ -183,7 +174,7 @@ function Contact() {
                   ></textarea>
                   <div className="but">
                     <button type="submit" className="but-button">
-                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;{res}&nbsp;&nbsp;
                       <i className="fa-brands fa-telegram fa-2x"></i>
                       &nbsp;&nbsp;
                     </button>
