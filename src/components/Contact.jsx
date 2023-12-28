@@ -1,5 +1,5 @@
 import "./Contact.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function Contact() {
@@ -30,7 +30,12 @@ function Contact() {
         body: JSON.stringify(contact),
       });
 
-      setres("sent");
+      setcontact({
+        username: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
     } catch (err) {}
   };
 
@@ -135,6 +140,7 @@ function Contact() {
                     <div className="col-6 mx-auto">
                       {" "}
                       <input
+                        required
                         type="text"
                         name="username"
                         id="username"
@@ -146,6 +152,7 @@ function Contact() {
                     <div className="col-6 mx-auto">
                       {" "}
                       <input
+                        required
                         type="email"
                         name="email"
                         id="email"
@@ -156,6 +163,7 @@ function Contact() {
                     </div>
                   </div>
                   <input
+                    required
                     type="text"
                     name="subject"
                     id="subject"
@@ -164,6 +172,7 @@ function Contact() {
                     placeholder="  ENTER SUBJECT"
                   ></input>
                   <textarea
+                    required
                     type="text"
                     name="message"
                     id="message"
@@ -174,7 +183,7 @@ function Contact() {
                   ></textarea>
                   <div className="but">
                     <button type="submit" className="but-button">
-                      &nbsp;&nbsp;{res}&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;
                       <i className="fa-brands fa-telegram fa-2x"></i>
                       &nbsp;&nbsp;
                     </button>
