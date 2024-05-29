@@ -74,7 +74,7 @@ export default function Education() {
                 <p>National Institute of Technology,Raipur</p>
                 <p>B.Tech (CSE)</p>
                 <p style={{ fontWeight: "bolder", textTransform: "uppercase" }}>
-                  CGPA: 8.18 (till 4th semester)
+                  CGPA: 8.09 (till 6th semester)
                 </p>
               </div>
             </div>
