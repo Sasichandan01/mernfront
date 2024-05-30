@@ -89,8 +89,7 @@ export default function Projects() {
                         static experience to reserve and purchase cinema
                         tickets. Users can browse movie listings, select
                         showtimes, choose seats, and make static payments
-                        through the system. These system enhance the movie-going
-                        experience by providing convenience and accessibility.
+                        through the system. 
                         <br />
                         <b>Tech Used:</b> React.js, Css, Bootstarp
                       </p>
