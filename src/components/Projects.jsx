@@ -70,11 +70,11 @@ export default function Projects() {
                         <b>Tech Used:</b> MERN Stack
                       </p>
 
-                      <a target="_blank" className="a" href="#">
+                      <a target="_blank" className="a" href="https://github.com/Sasichandan01/mernfront">
                         View Code
                       </a>
-                      <a target="_blank" className="b" href="#">
-                        View project
+                      <a target="_blank" className="b" href="https://github.com/Sasichandan01/portfoliobackend">
+                        View Code
                       </a>
                     </div>
                   </div>
