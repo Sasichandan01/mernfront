@@ -50,7 +50,7 @@ a {
 @media (max-width:150px){
   .nav{
     
-    height:fit-content
+    height:fit-content;
   }
 }
 @media (max-width:500px){
