@@ -21,7 +21,12 @@ function Contact() {
   };
   const hanlesubmit = async (e) => {
     e.preventDefault();
-
+setres((prev) => {
+  return {
+    ...prev,
+    transform: "scale(0)",
+  };
+});
     try {
       const response = await fetch(
         `https://portfolioback-4hta.onrender.com/api/auth/contact`,
@@ -36,7 +41,7 @@ function Contact() {
       setres((prev) => {
         return {
           ...prev,
-          justifyContent: prev.justifyContent==="start"?"end":"start"
+          transform: "scale(1)",
         };
       });
       setcontact({
