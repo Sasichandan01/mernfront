@@ -1,6 +1,6 @@
 import "./Contact.css";
-import { useState, useEffect } from "react";
-import { toast } from "react-toastify";
+import { useState } from "react";
+
 import "react-toastify/dist/ReactToastify.css";
 function Contact() {
   const [contact, setcontact] = useState({
@@ -9,7 +9,8 @@ function Contact() {
     subject: "",
     message: "",
   });
-  const [res, setres] = useState("");
+  const [res, setres] = useState({ display: "flex", justifyContent: "start" });
+
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -30,9 +31,14 @@ function Contact() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(contact),
-        }
-      );
-
+        });
+     
+      setres((prev) => {
+        return {
+          ...prev,
+          justifyContent: prev.justifyContent==="start"?"end":"start"
+        };
+      });
       setcontact({
         username: "",
         email: "",
@@ -184,7 +190,7 @@ function Contact() {
                     placeholder="  YOUR MESSAGE HERE"
                     rows="10"
                   ></textarea>
-                  <div className="but">
+                  <div className="but" style={res}>
                     <button type="submit" className="but-button">
                       &nbsp;&nbsp;&nbsp;&nbsp;
                       <i className="fa-brands fa-telegram fa-2x"></i>
