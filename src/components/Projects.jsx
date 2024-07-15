@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./Projects.css";
 import { useEffect } from "react";
@@ -70,10 +71,18 @@ export default function Projects() {
                         <b>Tech Used:</b> MERN Stack
                       </p>
 
-                      <a target="_blank" className="a" href="https://github.com/Sasichandan01/mernfront">
+                      <a
+                        target="_blank"
+                        className="a"
+                        href="https://github.com/Sasichandan01/mernfront"
+                      >
                         View Code
                       </a>
-                      <a target="_blank" className="b" href="https://github.com/Sasichandan01/portfoliobackend">
+                      <a
+                        target="_blank"
+                        className="b"
+                        href="https://github.com/Sasichandan01/portfoliobackend"
+                      >
                         View Code
                       </a>
                     </div>
@@ -89,7 +98,7 @@ export default function Projects() {
                         static experience to reserve and purchase cinema
                         tickets. Users can browse movie listings, select
                         showtimes, choose seats, and make static payments
-                        through the system. 
+                        through the system.
                         <br />
                         <b>Tech Used:</b> React.js, Css, Bootstarp
                       </p>
@@ -171,7 +180,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <div className="card">
-                    <img src="https://imgur.com/dCmf15H.png" />
+                    <img src="https://imgur.com/dCmf15H.png" alt="" />
 
                     <div className="card-content">
                       <h2>Simon Game</h2>
@@ -200,6 +209,40 @@ export default function Projects() {
                         View project
                       </a>
                     </div>
+                  </div>{" "}
+                </div>
+                <div className="card">
+                  <img
+                    src="https://i.ibb.co/5MmPV8J/Screenshot-2024-07-15-164430.png"
+                    alt=""
+                  />
+                  <div className="card-content">
+                    <h2>Drum Kit</h2>
+                    <p>
+                      Explore the rhythmic world of percussion with our
+                      interactive Drum Kit website. Experience authentic sounds,
+                      responsive design across devices, and educational
+                      resources to enhance your drumming skills. Perfect for
+                      both beginners and seasoned drummers alike, our website
+                      brings the joy of drumming directly to your fingertips.
+                      <br />
+                      <b>Tech Used:</b> HTML, CSS ,JavaScript
+                    </p>
+
+                    <a
+                      target="_blank"
+                      className="a"
+                      href="https://github.com/Sasichandan01/Drumkit"
+                    >
+                      View Code
+                    </a>
+                    <a
+                      target="_blank"
+                      className="b"
+                      href="https://sasichandan01.github.io/Drumkit/"
+                    >
+                      View Code
+                    </a>
                   </div>
                 </div>
               </Carousel>
