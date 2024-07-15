@@ -11,7 +11,7 @@ export default function Connect() {
     });
     window.scrollTo(0, 0);
   }, []);
-  const [call, setCall] = useState(false);
+
 
   return (
     <div>
