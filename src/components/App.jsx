@@ -1,4 +1,3 @@
-import { ToastContainer } from "react-toastify";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Projects from "./Projects";
@@ -10,7 +9,6 @@ import Education from "./Education";
 function App() {
   return (
     <div>
-      <ToastContainer />
       <Home />
       <About />
       <Education />

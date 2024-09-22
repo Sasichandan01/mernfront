@@ -1,7 +1,6 @@
 import "./Contact.css";
-import { useState } from "react";
-
-import "react-toastify/dist/ReactToastify.css";
+import { useState, useRef } from "react";
+import { CToast, CToastHeader, CToastBody, CToaster } from "@coreui/react";
 function Contact() {
   const [contact, setcontact] = useState({
     username: "",
@@ -10,7 +9,8 @@ function Contact() {
     message: "",
   });
   const [res, setres] = useState({ display: "flex", justifyContent: "start" });
-
+  const [toast, addToast] = useState(0);
+  const toaster = useRef();
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -21,12 +21,12 @@ function Contact() {
   };
   const hanlesubmit = async (e) => {
     e.preventDefault();
-setres((prev) => {
-  return {
-    ...prev,
-    transform: "scale(0)",
-  };
-});
+    setres((prev) => {
+      return {
+        ...prev,
+        transform: "scale(0)",
+      };
+    });
     try {
       const response = await fetch(
         `https://portfolioback-4hta.onrender.com/api/auth/contact`,
@@ -36,23 +36,47 @@ setres((prev) => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(contact),
+        }
+      );
+      if (response.ok) {
+        addToast(exampleToast);
+        setres((prev) => {
+          return {
+            ...prev,
+            transform: "scale(1)",
+          };
         });
-     
-      setres((prev) => {
-        return {
-          ...prev,
-          transform: "scale(1)",
-        };
-      });
-      setcontact({
-        username: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
+        setcontact({
+          username: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      }
     } catch (err) {}
   };
-
+  const exampleToast = (
+    <CToast color="#650470">
+      <CToastHeader autohide={false}>
+        <svg
+          className="rounded me-2"
+          width="20"
+          height="20"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+          role="img"
+        >
+          <rect width="100%" height="100%" fill="black"></rect>
+        </svg>
+        <div className="fw-bold me-auto">Thank you {contact.username}</div>
+      </CToastHeader>
+      <CToastBody>
+        <span class="visually-hidden"></span>
+        &nbsp;Message is sent
+      </CToastBody>
+    </CToast>
+  );
   return (
     <section
       className="contact"
@@ -141,7 +165,7 @@ setres((prev) => {
                   </tbody>
                 </table>
               </div>
-
+              <CToaster ref={toaster} push={toast} placement="top-end" />
               <div
                 className=" col-lg-6 col-12 "
                 id="contact-details"
